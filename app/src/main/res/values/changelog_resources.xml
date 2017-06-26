@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Do not forget to include this in any locale specific folders for translation-->
+
+    <!--In the following array put your changelog items
+    Take as many lines as you need.
+    Add as many items as you want or delete some if those are too many
+    This order is how they will appear in the dialog
+    Make any order you want from top to bottom-->
+    <string-array name="changelog_items">
+        <item>Rebased on A5 2017</item>
+        <item>Fixed Brightness dim</item>
+        <item>Fixed Modes Fc in camera</item>
+        <item>Fixed Broadcom/Sony Nfc</item>
+		<item>Fixed Smart View</item>
+        <item>S8 Dream UX Themed</item>
+		<item>Ported a few apps from s8 (Launcher, AOD and more)</item>
+        <item>Added Private Mode</item>
+        <item>Added EspheniKernel for all the s5 qcom variants</item>
+        <item>ROM Control Enhanced</item>
+        <item>Updated apps and mods in aroma</item>
+        <item>April 2017 Security Patches</item>
+		<item>And other things that I dont remember</item>
+    </string-array>
+
+    <!--This will be the dialog title.
+    Put your own rom version and name.
+    Have fun-->
+    <string name="rom_version_for_changelog">v3</string>
+
+
+</resources>
