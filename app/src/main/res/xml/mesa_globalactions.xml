@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Toggles">
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gapower"
+            android:summaryOff="(Disabled) Enables Power Off toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Power Off toggle in Power Menu"
+            android:title="Power Off"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gadata"
+            android:summaryOff="(Disabled) Enables Mobile Data toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Mobile Data toggle in Power Menu"
+            android:title="Mobile Data"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gaplane"
+            android:summaryOff="(Disabled) Enables Airplane toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Airplane toggle in Power Menu"
+            android:title="Airplane"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gareboot"
+            android:summaryOff="(Disabled) Enables Reboot toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Reboot toggle in Power Menu"
+            android:title="Reboot"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_garecovery"
+            android:summaryOff="(Disabled) Enables Reboot Recovery toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Reboot Recovery toggle in Power Menu"
+            android:title="Reboot Recovery"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gaemergency"
+            android:summaryOff="(Disabled) Enables Emergency Mode toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Emergency Mode toggle in Power Menu"
+            android:title="Emergency Mode"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gass"
+            android:summaryOff="(Disabled) Enables Screenshot toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Screenshot toggle in Power Menu"
+            android:title="Screenshot"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gascreenrec"
+            android:summaryOff="(Disabled) Enables Screen Recorder toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Screen Recorder toggle in Power Menu"
+            android:title="Screen Recorder"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gatorch"
+            android:summaryOff="(Disabled) Enables Torchlight toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Torchlight toggle in Power Menu"
+            android:title="Torchlight"/>
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="true"
+            android:key="mesa_gabike"
+            android:summaryOff="(Disabled) Enables Bike Mode toggle in Power Menu"
+            android:summaryOn="(Enabled) Enables Bike Mode toggle in Power Menu"
+            android:title="S Bike Mode"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Miscs">
+
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Blur Background"
+        android:key="mesa_pmblur"
+        android:defaultValue="true"
+        android:summaryOn="(Enabled) Enables Blur Background in Power Menu"
+        android:summaryOff="(Disabled) Enables Blur Background in Power Menu"/>
+
+	<PreferenceScreen
+        android:title="Custom Background">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="enable_gear_custom_bg"
+            android:summaryOff="(Disabled) Enables Custom Background"
+            android:summaryOn="(Enabled) Enables Custom Background"
+            android:title="Enable Custom Background"/>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="General bg preferences">
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:entries="@array/custom_bg_type_entries"
+                android:entryValues="@array/custom_bg_type_values"
+                android:key="gear_custom_bg_type"
+                android:title="Background type"
+                app:dependentValue="0"/>
+            <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
+                android:defaultValue="255"
+                android:key="gear_bg_opacity"
+                android:title="Background opacity"
+                app:maxValue="255"
+                app:minValue="0"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="Custom image preferences">
+            <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference
+                android:key="gear_bg_image_uri"
+                android:title="Select Bg image"/>
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:entries="@array/crop_entries"
+                android:entryValues="@array/crop_values"
+                android:key="gear_bg_crop_type"
+                android:title="Set Image Scaling Type"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="Color and gradient preferences">
+
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#00000000"
+                alphaSlider="true"
+                hexValue="true"
+                android:dependency="gear_custom_bg_type"
+                android:key="gear_bg_primary_color"
+                android:title="Select primary color"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#00000000"
+                alphaSlider="true"
+                hexValue="true"
+                android:dependency="gear_custom_bg_type"
+                android:key="gear_second_gradient_color"
+                android:title="Secondary Color (for gradient)"/>
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:dependency="gear_custom_bg_type"
+                android:entries="@array/gradient_entries"
+                android:entryValues="@array/gradient_values"
+                android:key="gear_bg_gradient_orientation"
+                android:title="Gradient orientation"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
