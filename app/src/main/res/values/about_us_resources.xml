@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<resources>
+
+
+    <!--Contact info arrays-->
+
+    <!--In this array you will put the icons for contact information,
+    for example xda icon for your xda thread, site icon for your site, facebook icon and so on-->
+    <array name="about_contact_us_drawables">
+        <item>@drawable/skies_fb</item>
+        <item>@drawable/skies_tg</item>
+    </array>
+
+    <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
+    <string-array name="about_contact_us_text">
+        <item>Facebook</item>
+        <item>Telegram</item>
+    </string-array>
+
+    <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
+    <string-array name="about_contact_us_links" translatable="false">
+        <item>https://www.facebook.com/mesalabsrom</item>
+        <item>https://t.me/joinchat/AAAAAEABRD9N6WIcROsfrg</item>
+    </string-array>
+
+
+
+    <!--Team info arrays-->
+    <array name="about_team_drawables">
+        <item>@drawable/mesa_avatar</item>
+        <item>@drawable/mesa_zonika</item>
+        <item>@drawable/mesa_armaa</item>
+        <item>@drawable/mesa_furkanoa</item>
+        <item>@drawable/mesa_omara</item>
+    </array>
+    <string-array name="about_team_names">
+        <item>BlackMesa - ROM Developer and Modder</item>
+        <item>Zonik - J5 maintainer and Modder</item>
+        <item>Armadel - ROM Tester</item>
+        <item>Furkano - ROM Tester</item>
+        <item>Omar - ROM Tester</item>
+    </string-array>
+    <string-array name="about_team_links" translatable="false">
+        <item>https://forum.xda-developers.com/member.php?u=6911575</item>
+        <item>https://forum.xda-developers.com/member.php?u=7620420</item>
+        <item>https://forum.xda-developers.com/member.php?u=7888393</item>
+        <item>https://forum.xda-developers.com/member.php?u=7397965</item>
+        <item>https://forum.xda-developers.com/member.php?u=8378267</item>
+    </string-array>
+
+
+
+    <!--Credits and thanks info arrays-->
+    <array name="about_credits_drawables">
+        <item>@drawable/mesa_mikea</item>
+        <item>@drawable/mesa_nxa</item>
+        <item>@drawable/mesa_aithema</item>
+        <item>@drawable/mesa_marceloa</item>
+    </array>
+    <string-array name="about_credits_names">
+        <item>malbert16442 - My collaborator and support</item>
+        <item>NX Team - AOD fix</item>
+        <item>Aithem Bennington - Help with mods</item>
+        <item>Marcelo765 - Help with mods</item>
+        <item>corsicanu - Help and support</item>
+    </string-array>
+    <string-array name="about_credits_links" translatable="false">
+        <item>https://forum.xda-developers.com/member.php?u=6173089</item>
+        <item>https://forum.xda-developers.com/member.php?u=7503246</item>
+        <item>https://www.facebook.com/groups/maaadreborn/?fref=ts</item>
+        <item>https://forum.xda-developers.com/member.php?u=7300572</item>
+        <item>https://forum.xda-developers.com/member.php?u=4658360</item>
+    </string-array>
+</resources>
